@@ -8,9 +8,9 @@
 <g id="pawn"><circle cx="45" cy="28" r="14" fill="currentColor"/><path d="M34 44h22l-3 12 13 23H27l13-23z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M24 81h42v9H24zM18 93h54v7H18z" fill="currentColor"/></g>
 </defs>
 <g color="#f8f7f1" stroke="#27313d" stroke-linejoin="round" stroke-width="2">
-<use href="#king" x="5" y="0"/><use href="#queen" x="105" y="0"/><use href="#rook" x="205" y="0"/><use href="#bishop" x="305" y="0"/><use href="#knight" x="405" y="0"/><use href="#pawn" x="505" y="0"/>
+<use href="#rook" x="5" y="0"/><use href="#knight" x="105" y="0"/><use href="#bishop" x="205" y="0"/><use href="#queen" x="305" y="0"/><use href="#king" x="405" y="0"/><use href="#pawn" x="505" y="0"/>
 </g>
 <g color="#252a32" stroke="#f1eee6" stroke-linejoin="round" stroke-width="2">
-<use href="#king" x="5" y="100"/><use href="#queen" x="105" y="100"/><use href="#rook" x="205" y="100"/><use href="#bishop" x="305" y="100"/><use href="#knight" x="405" y="100"/><use href="#pawn" x="505" y="100"/>
+<use href="#rook" x="5" y="100"/><use href="#knight" x="105" y="100"/><use href="#bishop" x="205" y="100"/><use href="#queen" x="305" y="100"/><use href="#king" x="405" y="100"/><use href="#pawn" x="505" y="100"/>
 </g>
 </svg>
