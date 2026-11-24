@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+<defs>
+<g id="king"><path d="M45 8v24M33 20h24" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/><path d="M28 38h44l-5 13 11 25H22l11-25zM22 80h56v9H22zM17 91h66v8H17z" fill="currentColor" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/></g>
+<g id="queen"><path d="M20 34l12 10 13-22 13 22 12-10-7 37H27zM18 78h64v10H18zM13 91h74v8H13z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><g fill="currentColor"><circle cx="20" cy="27" r="6"/><circle cx="45" cy="17" r="6"/><circle cx="70" cy="27" r="6"/></g></g>
+<g id="rook"><path d="M22 19h13v12h9V19h13v12h9V19h13v22l-8 8 7 30H22l7-30-7-8zM20 82h60v9H20zM15 93h70v7H15z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></g>
+<g id="bishop"><path d="M45 10c-18 17-24 29-17 43l9 13-11 13h38L53 66l9-13C69 39 63 27 45 10zM43 23l-8 22 14 10-7-32z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M24 78h42v10H24zM18 91h54v8H18z" fill="currentColor"/></g>
+<g id="knight"><path d="M22 79c4-12 4-22 0-31 9-1 13-8 14-20 2-11 12-17 27-15l-5 13 16 10-5 18 8 25z" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M48 24l-7 9 13-2" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="59" cy="30" r="3" fill="#8ba3b6"/><path d="M19 82h62v9H19zM14 93h72v7H14z" fill="currentColor"/></g>
+<g id="pawn"><circle cx="45" cy="28" r="14" fill="currentColor"/><path d="M34 44h22l-3 12 13 23H27l13-23z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M24 81h42v9H24zM18 93h54v7H18z" fill="currentColor"/></g>
+</defs>
+<g color="#f8f7f1" stroke="#27313d" stroke-linejoin="round" stroke-width="2">
+<use href="#king" x="5" y="0"/><use href="#queen" x="105" y="0"/><use href="#rook" x="205" y="0"/><use href="#bishop" x="305" y="0"/><use href="#knight" x="405" y="0"/><use href="#pawn" x="505" y="0"/>
+</g>
+<g color="#252a32" stroke="#f1eee6" stroke-linejoin="round" stroke-width="2">
+<use href="#king" x="5" y="100"/><use href="#queen" x="105" y="100"/><use href="#rook" x="205" y="100"/><use href="#bishop" x="305" y="100"/><use href="#knight" x="405" y="100"/><use href="#pawn" x="505" y="100"/>
+</g>
+</svg>
