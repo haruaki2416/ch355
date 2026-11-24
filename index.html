@@ -33,7 +33,20 @@
 </aside></div>
 <div class="modalback" id="modal"><div class="modal"><h2 id="modalTitle">Game over</h2><p id="modalText"></p><button class="btn primary" id="modalNew">New game</button></div></div><div class="toast" id="toast"></div>
 <script type="module">
-import { Chess } from 'https://esm.sh/chess.js@1.4.0';
+let Chess;
+try {
+  ({ Chess } = await import('https://cdn.jsdelivr.net/npm/chess.js@1.4.0/+esm'));
+} catch (firstError) {
+  try {
+    ({ Chess } = await import('https://esm.sh/chess.js@1.4.0'));
+  } catch (secondError) {
+    console.error('CH355 could not load chess.js from either CDN.', firstError, secondError);
+    document.getElementById('gameStatus').textContent = 'Chess engine failed to load. Check your connection or content blockers, then refresh.';
+    document.getElementById('engineStatus').textContent = 'Could not load chess.js from either CDN.';
+    document.getElementById('board').innerHTML = '<div style="grid-column:1/-1;display:grid;place-items:center;padding:24px;color:#f1f3f7;text-align:center">Chess engine unavailable.<br>Allow CDN access and refresh.</div>';
+    throw secondError;
+  }
+}
 const $=id=>document.getElementById(id);
 let game=new Chess(), human='w', mode='ai', thinking=false, flipped=false, selected=null, legal=[], lastMove=null, gameRecorded=false, pendingAnimation=null, motionBlur=true;
 let stats=JSON.parse(localStorage.getItem('ch355-stats')||'{"elo":800,"wins":0,"games":0,"losses":0,"draws":0}');
